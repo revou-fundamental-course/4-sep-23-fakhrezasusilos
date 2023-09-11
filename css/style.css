@@ -19,6 +19,14 @@ h3 {
     color: #941818;
 }
 
+img {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
