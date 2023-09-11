@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="js/script.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Matematik Persegi</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,16 +22,25 @@
     <div id="Luas Persegi" class="tabcontent">
         <h3>Luas Persegi</h3>
         <p>Ini isi luas persegi</p>
+        <p>Panjang Sisi : <input type="text" id="panjang sisi" placeholder="Input panjang sisi persegi"> </p>
+        <button type="button" id="hitung" onclick="luasPersegi()">Hitung</button>
+        <p>Luas = <span id="rumusLuas">Sisi x Sisi</span></p>
+        <p><span id="hitungan"></span></p>
+        <p>Luas = <span id="result"> </span></p>
     </div>
 
     <div id="Keliling Persegi" class="tabcontent">
         <h3>Keliling Persegi</h3>
         <p> ini isi keliling persegi.</p>
+        <p>Panjang Sisi : <input type="text" id="panjang sisi2" placeholder="Input panjang sisi persegi"> </p>
+        <button type="button" id="hitung2" onclick="kelilingPersegi()">Hitung</button>
+        <p>Keliling = <span id="rumusKeliling">Sisi</span> x 4</p>
+        <p>Keliling = <span id="result2"> </span></p>
     </div>
 
-<script>
-    document.getElementById("defaultButton").click();
-</script>
+    <script>
+        document.getElementById("defaultButton").click();
+    </script>
 
 </body>
 
