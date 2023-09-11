@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1> Kalkulator Matematik Persegi</h1>
+    </header>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openSquare(event, 'Luas Persegi')" id="defaultButton">Luas Persegi</button>
+        <button class="tablinks" onclick="openSquare(event, 'Keliling Persegi')">Keliling Persegi</button>
+    </div>
+
+    <div id="Luas Persegi" class="tabcontent">
+        <h3>Luas Persegi</h3>
+        <p>Ini isi luas persegi</p>
+    </div>
+
+    <div id="Keliling Persegi" class="tabcontent">
+        <h3>Keliling Persegi</h3>
+        <p> ini isi keliling persegi.</p>
+    </div>
+
+<script>
+    document.getElementById("defaultButton").click();
+</script>
+
+</body>
+
+</html>
