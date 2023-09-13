@@ -16,16 +16,28 @@ function openSquare(evt, squareMethod) {
 }
 function luasPersegi() {
     const panjangSisi = parseFloat(document.getElementById("panjang sisi").value);
-    
-    const luas = panjangSisi * panjangSisi;
-    document.getElementById("rumusLuas").textContent = panjangSisi+" x "+ panjangSisi ;
-    document.getElementById("result").textContent = luas;
+
+
+    if (panjangSisi === NaN) {
+        const luas = panjangSisi * panjangSisi;
+        document.getElementById("rumusLuas").textContent = panjangSisi + " x " + panjangSisi;
+        document.getElementById("result").textContent = luas;
+    } else {
+        document.getElementById("result").textContent = "Input Invalid";
+    }
+
 }
 
-function kelilingPersegi(){
+function kelilingPersegi() {
     const panjangSisi = parseFloat(document.getElementById("panjang sisi2").value);
-    
-    const keliling = panjangSisi * 4;
-    document.getElementById("rumusKeliling").textContent = panjangSisi;
-    document.getElementById("result2").textContent = keliling;
+
+    if (panjangSisi === NaN) {
+        const keliling = panjangSisi * 4;
+        document.getElementById("rumusKeliling").textContent = panjangSisi;
+        document.getElementById("result2").textContent = keliling;
+    } else {
+        document.getElementById("result2").textContent = "Input Invalid";
+    }
+
+
 }
